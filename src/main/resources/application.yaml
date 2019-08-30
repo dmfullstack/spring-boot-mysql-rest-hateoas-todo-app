@@ -2,10 +2,20 @@ spring:
   jpa:
     database: MYSQL
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    generate-ddl: true
 
   datasource:
     url: jdbc:mysql://192.168.99.100:3306/tododb
     username: root
     password: my-secret-pw
     driver-class-name: com.mysql.jdbc.Driver
+
+  data:
+    rest:
+      base-path: /api/v1
+
+server:
+  servlet:
+    context-path: /api/v1
