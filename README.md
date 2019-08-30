@@ -4,8 +4,11 @@ This Spring TODO app is a Java application built using Spring Boot, Spring Data 
 # Running Spring TODO App locally
 
 ## Checkout Spring TODO app
+
+```bash
 git clone https://github.com/lazidoca/spring-boot-mysql-rest-hateoas-todo-app.git
 cd spring-boot-mysql-rest-hateoas-todo-app
+```
 
 ## Update database connection in application.yaml
 
